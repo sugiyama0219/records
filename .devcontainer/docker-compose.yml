@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ../:/workspaces/records/:cached
+      - ../:/workspaces/records/
     ports:
       - "8000:8000"
     depends_on:
