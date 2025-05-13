@@ -2,7 +2,7 @@
   "name": "Laravel with MySQL",
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "app",
-  "workspaceFolder": "/workspaces/records",
+  "workspaceFolder": "/workspace",
   "postCreateCommand": "composer install && cp .env.example .env && php artisan key:generate",
   "customizations": {
     "vscode": {
