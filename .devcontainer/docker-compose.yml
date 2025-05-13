@@ -6,12 +6,12 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ../:/workspaces:cached
+      - ../:/workspaces/records:cached
     ports:
       - "8000:8000"
     depends_on:
       - db
-    working_dir: /var/www/html
+    working_dir: /workspaces/records
     command: php artisan serve --host=0.0.0.0 --port=8000
 
   db:
