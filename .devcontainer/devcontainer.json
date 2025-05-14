@@ -1,5 +1,5 @@
 {
-  "name": "Laravel with MySQL",
+  "name": "Laravel with My SQL",
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "app",
   "workspaceFolder": "/workspaces/records",

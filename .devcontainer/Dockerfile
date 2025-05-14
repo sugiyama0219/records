@@ -11,3 +11,5 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Dockerfileの末尾に追加（RUN apt-get後くらいに）
 RUN useradd -m vscode && \
     echo "vscode ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+RUN apt-get update && apt-get install -y default-mysql-client
